@@ -61,10 +61,10 @@ petz.check_capture_items = function(self, wielded_item_name, clicker, check_inv_
 		if check_inv_room == true then
 			--check for room in inventory
 			local inv = clicker:get_inventory()
-			if inv:room_for_item("main", ItemStack("air")) then
+			if inv:room_for_item("main", ItemStack("air")) and self.tamed then
 				return true
 			else
-				minetest.chat_send_player(clicker:get_player_name(), S("No room in your inventory to capture it."))
+				minetest.chat_send_player(clicker:get_player_name(), S("The animal has not been tamed or there is not enough room in your inventory."))
 				return false
 			end
 		else
