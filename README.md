@@ -1,4 +1,4 @@
-# Petz [petz]
+# Petz + NR-AN-AD [petzPLUZ]
 
 Cute kawaii mobs for Minetest.
 
