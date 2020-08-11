@@ -14,7 +14,7 @@ local collisionbox, collisionbox_baby = petz.get_collisionbox(p1, p2, scale_mode
 
 minetest.register_entity("petz:"..pet_name,{
 	--Petz specifics
-	type = "pigeon",
+	type = "crow",
 	init_tamagochi_timer = false,
 	can_fly = true,
 	is_pet = true,
@@ -87,5 +87,5 @@ minetest.register_entity("petz:"..pet_name,{
 
 })
 
-petz:register_egg("petz:crow", S("Pigeon"), "petz_spawnegg_pigeon.png", true)
+petz:register_egg("petz:crow", S("crow"), "petz_spawnegg_pigeon.png", true)
 
