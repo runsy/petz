@@ -61,8 +61,8 @@ minetest.register_entity("petz:"..pet_name,{
 		stand_fly={range={x=92, y=98}, speed=25, loop=true},
 	},
 	sounds = {
-		misc = "petz_pigeon_cooing",
-		moaning = "petz_pigeon_moaning",
+		misc = "petz_crow",
+		moaning = "petz_crow",
 	},
 
 	logic = petz.herbivore_brain,
