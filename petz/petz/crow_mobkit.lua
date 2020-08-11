@@ -17,7 +17,7 @@ minetest.register_entity("petz:"..pet_name,{
 	type = "crow",
 	init_tamagochi_timer = false,
 	can_fly = true,
-	is_pet = true,
+	is_pet = false,
 	max_height = 5,
 	has_affinity = true,
 	feathered = true,
@@ -41,9 +41,9 @@ minetest.register_entity("petz:"..pet_name,{
 	-- api props
 	springiness= 0,
 	buoyancy = 0.5, -- portion of hitbox submerged
-	max_speed = 4,
+	max_speed = 2.5,
 	jump_height = 2.0,
-	view_range = 13,
+	view_range = 10,
 	lung_capacity = 10, -- seconds
 	max_hp = 8,
 
@@ -61,8 +61,8 @@ minetest.register_entity("petz:"..pet_name,{
 		stand_fly={range={x=92, y=98}, speed=25, loop=true},
 	},
 	sounds = {
-		misc = "petz_crow",
-		moaning = "petz_crow",
+		misc = "petz_crow.ogg",
+		moaning = "petz_crow.ogg",
 	},
 
 	logic = petz.herbivore_brain,
@@ -87,5 +87,4 @@ minetest.register_entity("petz:"..pet_name,{
 
 })
 
-petz:register_egg("petz:crow", S("crow"), "petz_spawnegg_pigeon.png", true)
-
+petz:register_egg("petz:crow", S("crow"), "petz_spawnegg_crow.png", true)
