@@ -148,6 +148,12 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
+	type = "shapeless",
+	output = "petz:roasted_chicken_legs 3",
+    recipe = {"petz:chicken_legs_bucket"},
+})
+
+minetest.register_craft({
 	type = "cooking",
 	output = "petz:roasted_chicken_legs",
 	recipe = "petz:chicken_legs",
